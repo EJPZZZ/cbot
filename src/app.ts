@@ -1,6 +1,25 @@
 import { MemoryDB, addKeyword, createBot, createFlow, createProvider } from '@bot-whatsapp/bot';
 import { BaileysProvider } from '@bot-whatsapp/provider-baileys';
 
+
+
+
+// Función para determinar si es de día o de tarde
+function getSaludo() {
+    const horaActual = new Date().getHours();
+    if (horaActual >= 6 && horaActual < 12) {
+        return 'Buenos días';
+    } else if (horaActual >= 12 && horaActual < 18) {
+        return 'Buenas tardes';
+    } else {
+        return 'Buenas noches';
+    }
+}
+
+// Flujo de saludo inicial
+const flowSaludoInicial = addKeyword('SaludoInicial')
+    .addAnswer(`${getSaludo()}, bienvenido al menú principal. Por favor elige una opción:\n1. Información\n2. Servicios\n3. Contacto\nEscribe el número de la opción deseada.`);
+
 // Flujo del menú principal
 const flowMenu = addKeyword('Menu')
     .addAnswer('Bienvenido al menú principal. Por favor elige una opción:\n1. Información\n2. Servicios\n3. Contacto\nEscribe el número de la opción deseada.');
@@ -27,10 +46,15 @@ const flowAdios = addKeyword('Adios')
 
 // Flujo de fallback para capturar cualquier otro mensaje y mostrar el menú
 const flowFallback = addKeyword('')
-    .addAnswer('No he entendido tu mensaje. Aquí está el menú principal:\n1. Información\n2. Servicios\n3. Contacto\nEscribe el número de la opción deseada.');
+.addAnswer(`${getSaludo()}, bienvenido al menú principal. Por favor elige una opción:\n1. Información\n2. Servicios\n3. Contacto\nEscribe el número de la opción deseada.`);
+
+// Flujo para cuando el usuario no responde después de ver el menú
+const flowNoRespuesta = addKeyword('NoRespuesta')
+    .addAnswer('Lo siento, no has elegido ninguna de las opciones. Por favor, inténtalo de nuevo.');
 
 // Combinar los flujos en un flujo principal
 const mainFlow = createFlow([
+    flowSaludoInicial,
     flowBienvenida,
     flowAyuda,
     flowAdios,
@@ -38,6 +62,7 @@ const mainFlow = createFlow([
     flowInformacion,
     flowServicios,
     flowContacto,
+    flowNoRespuesta, // Nuevo flujo para capturar cuando no hay respuesta después del menú
     flowFallback  // El flujo de fallback debe ir al final para capturar cualquier otro mensaje
 ]);
 
