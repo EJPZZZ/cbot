@@ -2,136 +2,10 @@
   key: {
     remoteJid: '5219321156539@s.whatsapp.net',
     fromMe: false,
-    id: '74D69BABB574EB93D1F262A8B68CA404',
+    id: '4A8E70CFC2F68956683F0586EEB9A1C0',
     participant: undefined
   },
-  messageTimestamp: 1716167805,
-  pushName: 'Eduardo Jiménez',
-  broadcast: false,
-  message: Message {
-    conversation: 'La vrg es',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'La vrg es',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
-    'Escribe el número de la opción deseada.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
-    fromMe: false,
-    id: '67BC153BCD6C2FAFA4A77A7B5CC53028',
-    participant: undefined
-  },
-  messageTimestamp: 1716167808,
-  pushName: 'Eduardo Jiménez',
-  broadcast: false,
-  message: Message {
-    conversation: 'Si es nuestro proyecto',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Si es nuestro proyecto',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
-    'Escribe el número de la opción deseada.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
-    fromMe: false,
-    id: '5B3D9C7092A0DA3A6061A711A141E539',
-    participant: undefined
-  },
-  messageTimestamp: 1716167811,
-  pushName: 'Eduardo Jiménez',
-  broadcast: false,
-  message: Message {
-    conversation: '5',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '5',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
-    'Escribe el número de la opción deseada.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
-    fromMe: false,
-    id: '5E3509E7350B5560CBD30ACB519034F4',
-    participant: undefined
-  },
-  messageTimestamp: 1716167814,
+  messageTimestamp: 1716185666,
   pushName: 'Eduardo Jiménez',
   broadcast: false,
   message: Message {
@@ -146,10 +20,10 @@
   from: '5219321156539'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f4b6b582-a49b-4232-a185-23ac25c0390e',
-  keyword: 'key_14880e00-2e3a-4cb3-86e0-c2d8d5a689b3',
-  answer: '¡Hola! ¿Cómo estás? ¿En qué puedo ayudarte hoy?\n' +
-    'Si necesitas ver el menú principal, escribe "Menu".',
+  ref: 'ans_28f745b0-49d4-46fe-b67e-3911558ef377',
+  keyword: 'key_e5d51aed-4e6f-4d73-87f0-946f845df59b',
+  answer: '¡Hola! Soy el chat-bot del ITSS🤖 ¿En qué puedo ayudarte hoy?\n' +
+    'Si necesitas ver el menú principal, escribe "Menú".',
   options: {
     media: undefined,
     buttons: [],
@@ -161,16 +35,16 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'a2d87e53c85a8efaa0890404e9be21fe'
+  refSerialize: '850cf5d48605bc2656ee7d188d3bbca8'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5219321156539@s.whatsapp.net',
     fromMe: false,
-    id: '5ACCD79B48447C7D181B2A050CA1C225',
+    id: '8D9935672F619E80FE54DB5B6F539233',
     participant: undefined
   },
-  messageTimestamp: 1716167819,
+  messageTimestamp: 1716185667,
   pushName: 'Eduardo Jiménez',
   broadcast: false,
   message: Message {
@@ -185,12 +59,12 @@
   from: '5219321156539'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
+  ref: 'ans_39deb7d6-7cb8-4ed2-99e2-27983a0919a6',
+  keyword: 'key_60ef9968-6fd7-4c90-af94-3f5fe50c9cd5',
+  answer: 'Bienvenido al menú principal. Por favor elige una opción:\n' +
+    '1. Información sobre nuestras ingenierias\n' +
+    '2. Talleres\n' +
+    '3. Contactanos\n' +
     'Escribe el número de la opción deseada.',
   options: {
     media: undefined,
@@ -203,79 +77,77 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
+  refSerialize: '0048d4899d10d715fc79d6b1de868b97'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5219321156539@s.whatsapp.net',
     fromMe: false,
-    id: 'D2C1B3F6E14EB285C1281C9195A43F1D',
+    id: '8F07A5B587AFD85BF227480F4D76798E',
     participant: undefined
   },
-  messageTimestamp: 1716167826,
+  messageTimestamp: 1716185673,
   pushName: 'Eduardo Jiménez',
   broadcast: false,
   message: Message {
-    conversation: 'Cualquier cosa',
+    conversation: '2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Cualquier cosa',
+  body: '2',
   name: 'Eduardo Jiménez',
   from: '5219321156539'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
-    'Escribe el número de la opción deseada.',
+  ref: 'ans_ef3bf4d5-2762-4174-b80a-8d7a3309bb61',
+  keyword: 'key_618546f7-470d-40a3-a614-c96673f69ca7',
+  answer: 'El ITSS ofrece los siguientes talleres:\n' +
+    '1. Ajedrez\n' +
+    '2. Basquet\n' +
+    '3. Futbol\n' +
+    '4. Taekwondo\n' +
+    '¿De qué taller te gustaría más información? Por favor, escribe el nombre del taller.',
   options: {
     media: undefined,
     buttons: [],
-    capture: false,
+    capture: true,
     delay: 0,
     idle: undefined,
     ref: undefined,
     nested: [],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
+  refSerialize: 'df3bd497df5571ecdae88aee57ddc2b8'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5219321156539@s.whatsapp.net',
     fromMe: false,
-    id: '172D0E25406CF5FD436CA6E70522C5C3',
+    id: 'CB08794F7385C85B2B48F25CA86E2044',
     participant: undefined
   },
-  messageTimestamp: 1716167829,
+  messageTimestamp: 1716185683,
   pushName: 'Eduardo Jiménez',
   broadcast: false,
   message: Message {
-    conversation: 'Pene',
+    conversation: 'Ajedrez',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Pene',
+  body: 'Ajedrez',
   name: 'Eduardo Jiménez',
   from: '5219321156539'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
-    'Escribe el número de la opción deseada.',
+  ref: 'ans_28f745b0-49d4-46fe-b67e-3911558ef377',
+  keyword: 'key_e5d51aed-4e6f-4d73-87f0-946f845df59b',
+  answer: '¡Hola! Soy el chat-bot del ITSS🤖 ¿En qué puedo ayudarte hoy?\n' +
+    'Si necesitas ver el menú principal, escribe "Menú".',
   options: {
     media: undefined,
     buttons: [],
@@ -287,89 +159,5 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
-    fromMe: false,
-    id: 'C945011D4B0A768646DDA6875EFADCBA',
-    participant: undefined
-  },
-  messageTimestamp: 1716167832,
-  pushName: 'Eduardo Jiménez',
-  broadcast: false,
-  message: Message {
-    conversation: 'No funciona',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'No funciona',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
-    'Escribe el número de la opción deseada.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
-    fromMe: false,
-    id: 'D3F94F2D17938A194FAB8B9EE1C586AF',
-    participant: undefined
-  },
-  messageTimestamp: 1716167833,
-  pushName: 'Eduardo Jiménez',
-  broadcast: false,
-  message: Message {
-    conversation: 'Jajaj',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Jajaj',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d3c53d84-5a52-4957-b329-0446fdba893b',
-  keyword: 'key_394d4ac7-2656-4896-8cd5-1716eb001426',
-  answer: 'Buenas noches, bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información\n' +
-    '2. Servicios\n' +
-    '3. Contacto\n' +
-    'Escribe el número de la opción deseada.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '0669c922d0936dc22abb180a2758df88'
+  refSerialize: '850cf5d48605bc2656ee7d188d3bbca8'
 }
