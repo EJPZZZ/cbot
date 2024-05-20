@@ -37,13 +37,13 @@ const respuestasTalleres: { [key: string]: string } = {
     'futbol': 'Mensaje personalizado para el taller de futbol.',
     'fútbol': 'Mensaje personalizado para el taller de futbol.',
     'taekwondo': 'Mensaje personalizado para el taller de taekwondo.'
-    // Puedes agregar más talleres y respuestas personalizadas aquí
+
 };
 
 // Flujo para preguntar sobre la carrera deseada
-const flowInformacionCarreras = addKeyword(['1','Informacion', 'Información'])
-    .addAnswer('Contamos con 7 carreras:\n1. Informatica\n2. Agronomia\n3. Industrial\n4. Energias renovables\n5. Bioquimica\n6. Electromecanica\n7. Administracion de empresas\n¿De qué carrera te gustaría información?')
-    .addAnswer('Por favor, escribe el nombre de la carrera.', { capture: true }, async (ctx, {provider}) => {
+const flowInformacionCarreras = addKeyword(['1', 'Informacion', 'Información'])
+    .addAnswer('Contamos con 7 carreras:\n1. Informática\n2. Agronomía\n3. Industrial\n4. Energías renovables\n5. Bioquímica\n6. Electromecánica\n7. Administración de empresas\n¿De qué carrera te gustaría información?')
+    .addAnswer('Por favor, escribe el nombre de la carrera.', { capture: true }, async (ctx, { provider }) => {
         const respuesta = ctx.body.toLowerCase().trim();
         const respuestaCarrera = respuestasCarreras[respuesta];
 
@@ -55,8 +55,8 @@ const flowInformacionCarreras = addKeyword(['1','Informacion', 'Información'])
     });
 
 // Flujo para talleres
-const flowInformacionTalleres = addKeyword(['2', 'Servicios'])
-    .addAnswer('El ITSS ofrece los siguientes talleres:\n1. Ajedrez\n2. Basquet\n3. Futbol\n4. Taekwondo\n¿De qué taller te gustaría más información? Por favor, escribe el nombre del taller.', { capture: true }, async (ctx, {provider}) => {
+const flowInformacionTalleres = addKeyword(['2', 'Talleres', 'talleres'])
+    .addAnswer('El ITSS ofrece los siguientes talleres:\n1. Ajedrez\n2. Basquet\n3. Futbol\n4. Taekwondo\n¿De qué taller te gustaría más información? Por favor, escribe el nombre del taller.', { capture: true }, async (ctx, { provider }) => {
         const respuesta = ctx.body.toLowerCase().trim();
         const respuestaTaller = respuestasTalleres[respuesta];
 
@@ -69,26 +69,22 @@ const flowInformacionTalleres = addKeyword(['2', 'Servicios'])
 
 // Flujo de saludo inicial
 const flowSaludoInicial = addKeyword('SaludoInicial')
-    .addAnswer(`${getSaludo()}, bienvenido al menú principal. Por favor elige una opción:\n1. Información\n2. Servicios\n3. Contacto\nEscribe el número de la opción deseada.`);
+    .addAnswer(`${getSaludo()}, bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\nEscribe el número de la opción deseada.`);
 
 // Flujo del menú principal
-const flowMenu = addKeyword(['Menu','Menú','menú', 'menu'])
-    .addAnswer(' Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contactanos\nEscribe el número de la opción deseada.');
+const flowMenu = addKeyword(['Menu', 'Menú', 'menú', 'menu'])
+    .addAnswer(' Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\nEscribe el número de la opción deseada.');
 
 // Flujos para las otras opciones del menú
-const flowContacto = addKeyword(['3', 'Contacto'])
+const flowContacto = addKeyword(['3', 'Contacto', 'Contactanos', 'contactanos'])
     .addAnswer('Puedes contactarnos por correo en soporte@ejemplo.com o llamarnos al 123-456-7890.');
 
 // Flujos adicionales
 const flowBienvenida = addKeyword('')
-    .addAnswer(`${getSaludo()}, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información\n2. Servicios\n3. Contacto\nEscribe el número de la opción deseada.`);
+    .addAnswer(`${getSaludo()}, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\nEscribe el número de la opción deseada.`);
 
-//const flowAyuda = addKeyword('Ayuda')
-  //  .addAnswer('Claro, estoy aquí para ayudarte. ¿Qué necesitas saber?\nPara ver el menú principal, escribe "Menu".');
-
-const flowAdios = addKeyword(['Adios','adios', 'adiós', 'Adiós'])
+const flowAdios = addKeyword(['Adios', 'adios', 'adiós', 'Adiós'])
     .addAnswer('Hasta luego, que tengas un buen día.\nPara ver el menú principal en cualquier momento, escribe "Menu".');
-
 
 // Combinar todos los flujos en un flujo principal
 const mainFlow = createFlow([
@@ -98,7 +94,6 @@ const mainFlow = createFlow([
     flowMenu,
     flowContacto,
     flowBienvenida,
-   // flowAyuda,
     flowAdios
 ]);
 
@@ -107,10 +102,28 @@ const main = async () => {
     const provider = createProvider(BaileysProvider);
     provider.initHttpServer(3002);
 
-    await createBot({
+    const database = new MemoryDB();
+    const bot = await createBot({
         flow: mainFlow,
-        database: new MemoryDB(),
+        database,
         provider
+    });
+
+    const userTimeouts: { [key: string]: NodeJS.Timeout } = {};
+
+    // Configurar el flujo del bot para manejar mensajes
+    bot.on('message', async (ctx) => {
+        const userId = ctx.from;
+        
+        // Limpiar el temporizador existente, si lo hay
+        if (userTimeouts[userId]) {
+            clearTimeout(userTimeouts[userId]);
+        }
+
+        // Establecer un nuevo temporizador
+        userTimeouts[userId] = setTimeout(async () => {
+            await provider.sendText(userId + '@s.whatsapp.net', 'Hasta luego, que tengas un buen día.\nPara ver el menú principal en cualquier momento, escribe "Menu".');
+        }, 60000); // 60000ms = 1 minuto
     });
 };
 
