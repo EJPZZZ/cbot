@@ -1,70 +1,31 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
+    remoteJid: '5219321194164@s.whatsapp.net',
     fromMe: false,
-    id: '4A8E70CFC2F68956683F0586EEB9A1C0',
+    id: 'DC247FB4F22B0A5AB2CECCE16F5D2A3B',
     participant: undefined
   },
-  messageTimestamp: 1716185666,
-  pushName: 'Eduardo Jiménez',
+  messageTimestamp: 1716223671,
+  pushName: 'Daniel',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    conversation: 'Buen día',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hola',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
+  body: 'Buen día',
+  name: 'Daniel',
+  from: '5219321194164'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_28f745b0-49d4-46fe-b67e-3911558ef377',
-  keyword: 'key_e5d51aed-4e6f-4d73-87f0-946f845df59b',
-  answer: '¡Hola! Soy el chat-bot del ITSS🤖 ¿En qué puedo ayudarte hoy?\n' +
-    'Si necesitas ver el menú principal, escribe "Menú".',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '850cf5d48605bc2656ee7d188d3bbca8'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
-    fromMe: false,
-    id: '8D9935672F619E80FE54DB5B6F539233',
-    participant: undefined
-  },
-  messageTimestamp: 1716185667,
-  pushName: 'Eduardo Jiménez',
-  broadcast: false,
-  message: Message {
-    conversation: 'Menú',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Menú',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_39deb7d6-7cb8-4ed2-99e2-27983a0919a6',
-  keyword: 'key_60ef9968-6fd7-4c90-af94-3f5fe50c9cd5',
-  answer: 'Bienvenido al menú principal. Por favor elige una opción:\n' +
-    '1. Información sobre nuestras ingenierias\n' +
-    '2. Talleres\n' +
-    '3. Contactanos\n' +
+  ref: 'ans_e6a43f08-abd0-4fa8-999d-fdf0d972fee7',
+  keyword: 'key_d33003f6-0bb4-44ac-aeab-b9a95a79cf67',
+  answer: 'Buenos días, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n' +
+    '1. Información\n' +
+    '2. Servicios\n' +
+    '3. Contacto\n' +
     'Escribe el número de la opción deseada.',
   options: {
     media: undefined,
@@ -77,77 +38,41 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '0048d4899d10d715fc79d6b1de868b97'
+  refSerialize: '406b9d54a781cced16b59a2b28775dac'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
+    remoteJid: '5219321194164@s.whatsapp.net',
     fromMe: false,
-    id: '8F07A5B587AFD85BF227480F4D76798E',
+    id: '1ED3FF6FE12D20B8690B5E1436F9C41E',
     participant: undefined
   },
-  messageTimestamp: 1716185673,
-  pushName: 'Eduardo Jiménez',
+  messageTimestamp: 1716223679,
+  pushName: 'Daniel',
   broadcast: false,
   message: Message {
-    conversation: '2',
+    conversation: '1',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '2',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
+  body: '1',
+  name: 'Daniel',
+  from: '5219321194164'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_ef3bf4d5-2762-4174-b80a-8d7a3309bb61',
-  keyword: 'key_618546f7-470d-40a3-a614-c96673f69ca7',
-  answer: 'El ITSS ofrece los siguientes talleres:\n' +
-    '1. Ajedrez\n' +
-    '2. Basquet\n' +
-    '3. Futbol\n' +
-    '4. Taekwondo\n' +
-    '¿De qué taller te gustaría más información? Por favor, escribe el nombre del taller.',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: true,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'df3bd497df5571ecdae88aee57ddc2b8'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5219321156539@s.whatsapp.net',
-    fromMe: false,
-    id: 'CB08794F7385C85B2B48F25CA86E2044',
-    participant: undefined
-  },
-  messageTimestamp: 1716185683,
-  pushName: 'Eduardo Jiménez',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ajedrez',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Ajedrez',
-  name: 'Eduardo Jiménez',
-  from: '5219321156539'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_28f745b0-49d4-46fe-b67e-3911558ef377',
-  keyword: 'key_e5d51aed-4e6f-4d73-87f0-946f845df59b',
-  answer: '¡Hola! Soy el chat-bot del ITSS🤖 ¿En qué puedo ayudarte hoy?\n' +
-    'Si necesitas ver el menú principal, escribe "Menú".',
+  ref: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  keyword: 'key_877963ca-df26-409b-a841-819468043f26',
+  answer: 'Contamos con 7 carreras:\n' +
+    '1. Informatica\n' +
+    '2. Agronomia\n' +
+    '3. Industrial\n' +
+    '4. Energias renovables\n' +
+    '5. Bioquimica\n' +
+    '6. Electromecanica\n' +
+    '7. Administracion de empresas\n' +
+    '¿De qué carrera te gustaría información?',
   options: {
     media: undefined,
     buttons: [],
@@ -159,5 +84,421 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '850cf5d48605bc2656ee7d188d3bbca8'
+  refSerialize: 'ff80ef6f46ca30eccbd7f79890632c99'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_abdf0485-660a-4abe-9346-645c55a39e02',
+  keyword: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  answer: 'Por favor, escribe el nombre de la carrera.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'c1cd1f90de19f0c346b278f50c660bc7'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321041432@s.whatsapp.net',
+    fromMe: false,
+    id: 'B4C8F9C86843FB15273D45611EB423F9',
+    participant: undefined
+  },
+  messageTimestamp: 1716223683,
+  pushName: '~',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  name: '~',
+  from: '5219321041432'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e6a43f08-abd0-4fa8-999d-fdf0d972fee7',
+  keyword: 'key_d33003f6-0bb4-44ac-aeab-b9a95a79cf67',
+  answer: 'Buenos días, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n' +
+    '1. Información\n' +
+    '2. Servicios\n' +
+    '3. Contacto\n' +
+    'Escribe el número de la opción deseada.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '406b9d54a781cced16b59a2b28775dac'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321146736@s.whatsapp.net',
+    fromMe: false,
+    id: '64623945D058B1BBB313A422AB68AD6F',
+    participant: undefined
+  },
+  messageTimestamp: 1716223685,
+  pushName: 'Edgardo Arias Marin',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  name: 'Edgardo Arias Marin',
+  from: '5219321146736'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e6a43f08-abd0-4fa8-999d-fdf0d972fee7',
+  keyword: 'key_d33003f6-0bb4-44ac-aeab-b9a95a79cf67',
+  answer: 'Buenos días, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n' +
+    '1. Información\n' +
+    '2. Servicios\n' +
+    '3. Contacto\n' +
+    'Escribe el número de la opción deseada.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '406b9d54a781cced16b59a2b28775dac'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321146736@s.whatsapp.net',
+    fromMe: false,
+    id: '0435443BBB6203C9A5F6619D265E0AA9',
+    participant: undefined
+  },
+  messageTimestamp: 1716223687,
+  pushName: 'Edgardo Arias Marin',
+  broadcast: false,
+  message: Message {
+    conversation: 'Información',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Información',
+  name: 'Edgardo Arias Marin',
+  from: '5219321146736'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  keyword: 'key_877963ca-df26-409b-a841-819468043f26',
+  answer: 'Contamos con 7 carreras:\n' +
+    '1. Informatica\n' +
+    '2. Agronomia\n' +
+    '3. Industrial\n' +
+    '4. Energias renovables\n' +
+    '5. Bioquimica\n' +
+    '6. Electromecanica\n' +
+    '7. Administracion de empresas\n' +
+    '¿De qué carrera te gustaría información?',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ff80ef6f46ca30eccbd7f79890632c99'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_abdf0485-660a-4abe-9346-645c55a39e02',
+  keyword: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  answer: 'Por favor, escribe el nombre de la carrera.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'c1cd1f90de19f0c346b278f50c660bc7'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321194164@s.whatsapp.net',
+    fromMe: false,
+    id: 'FECC23E3CB477FB39D0205394354407E',
+    participant: undefined
+  },
+  messageTimestamp: 1716223691,
+  pushName: 'Daniel',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  name: 'Daniel',
+  from: '5219321194164'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  keyword: 'key_877963ca-df26-409b-a841-819468043f26',
+  answer: 'Contamos con 7 carreras:\n' +
+    '1. Informatica\n' +
+    '2. Agronomia\n' +
+    '3. Industrial\n' +
+    '4. Energias renovables\n' +
+    '5. Bioquimica\n' +
+    '6. Electromecanica\n' +
+    '7. Administracion de empresas\n' +
+    '¿De qué carrera te gustaría información?',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ff80ef6f46ca30eccbd7f79890632c99'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_abdf0485-660a-4abe-9346-645c55a39e02',
+  keyword: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  answer: 'Por favor, escribe el nombre de la carrera.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'c1cd1f90de19f0c346b278f50c660bc7'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321146736@s.whatsapp.net',
+    fromMe: false,
+    id: '6380164025F9F76A178FBA0BA66A7B94',
+    participant: undefined
+  },
+  messageTimestamp: 1716223695,
+  pushName: 'Edgardo Arias Marin',
+  broadcast: false,
+  message: Message {
+    conversation: 'Agronomía',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Agronomía',
+  name: 'Edgardo Arias Marin',
+  from: '5219321146736'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e6a43f08-abd0-4fa8-999d-fdf0d972fee7',
+  keyword: 'key_d33003f6-0bb4-44ac-aeab-b9a95a79cf67',
+  answer: 'Buenos días, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n' +
+    '1. Información\n' +
+    '2. Servicios\n' +
+    '3. Contacto\n' +
+    'Escribe el número de la opción deseada.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '406b9d54a781cced16b59a2b28775dac'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321041432@s.whatsapp.net',
+    fromMe: false,
+    id: '388524D163D4A00C46B322A350BB0755',
+    participant: undefined
+  },
+  messageTimestamp: 1716223697,
+  pushName: '~',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  name: '~',
+  from: '5219321041432'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  keyword: 'key_877963ca-df26-409b-a841-819468043f26',
+  answer: 'Contamos con 7 carreras:\n' +
+    '1. Informatica\n' +
+    '2. Agronomia\n' +
+    '3. Industrial\n' +
+    '4. Energias renovables\n' +
+    '5. Bioquimica\n' +
+    '6. Electromecanica\n' +
+    '7. Administracion de empresas\n' +
+    '¿De qué carrera te gustaría información?',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ff80ef6f46ca30eccbd7f79890632c99'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_abdf0485-660a-4abe-9346-645c55a39e02',
+  keyword: 'ans_b1d4f488-72d0-4d46-a487-4f0af8e5356d',
+  answer: 'Por favor, escribe el nombre de la carrera.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'c1cd1f90de19f0c346b278f50c660bc7'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321194164@s.whatsapp.net',
+    fromMe: false,
+    id: '097C97BA4AF11F03A6ABA3D490FC7AC5',
+    participant: undefined
+  },
+  messageTimestamp: 1716223704,
+  pushName: 'Daniel',
+  broadcast: false,
+  message: Message {
+    conversation: 'Informática',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Informática',
+  name: 'Daniel',
+  from: '5219321194164'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e6a43f08-abd0-4fa8-999d-fdf0d972fee7',
+  keyword: 'key_d33003f6-0bb4-44ac-aeab-b9a95a79cf67',
+  answer: 'Buenos días, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n' +
+    '1. Información\n' +
+    '2. Servicios\n' +
+    '3. Contacto\n' +
+    'Escribe el número de la opción deseada.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '406b9d54a781cced16b59a2b28775dac'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5219321041432@s.whatsapp.net',
+    fromMe: false,
+    id: '28B71C87AC5211FADC4C1EA8B4806152',
+    participant: undefined
+  },
+  messageTimestamp: 1716223720,
+  pushName: '~',
+  broadcast: false,
+  message: Message {
+    conversation: 'Informatica',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Informatica',
+  name: '~',
+  from: '5219321041432'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e6a43f08-abd0-4fa8-999d-fdf0d972fee7',
+  keyword: 'key_d33003f6-0bb4-44ac-aeab-b9a95a79cf67',
+  answer: 'Buenos días, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n' +
+    '1. Información\n' +
+    '2. Servicios\n' +
+    '3. Contacto\n' +
+    'Escribe el número de la opción deseada.',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '406b9d54a781cced16b59a2b28775dac'
 }

@@ -41,8 +41,8 @@ const respuestasTalleres: { [key: string]: string } = {
 };
 
 // Flujo para preguntar sobre la carrera deseada
-const flowInformacionCarreras = addKeyword(['1', 'Info', 'Informacion', 'Información'])
-    .addAnswer('Contamos con 7 carreras:\n1. Informatica\n2. Agronomia\n3. Industrial\n4. Energias renovables\n5. Bioquimica\n6. Electromecanica\n7. Admi\n¿De qué carrera te gustaría información?')
+const flowInformacionCarreras = addKeyword(['1','Informacion', 'Información'])
+    .addAnswer('Contamos con 7 carreras:\n1. Informatica\n2. Agronomia\n3. Industrial\n4. Energias renovables\n5. Bioquimica\n6. Electromecanica\n7. Administracion de empresas\n¿De qué carrera te gustaría información?')
     .addAnswer('Por favor, escribe el nombre de la carrera.', { capture: true }, async (ctx, {provider}) => {
         const respuesta = ctx.body.toLowerCase().trim();
         const respuestaCarrera = respuestasCarreras[respuesta];
@@ -73,18 +73,18 @@ const flowSaludoInicial = addKeyword('SaludoInicial')
 
 // Flujo del menú principal
 const flowMenu = addKeyword(['Menu','Menú','menú', 'menu'])
-    .addAnswer('Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contactanos\nEscribe el número de la opción deseada.');
+    .addAnswer(' Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contactanos\nEscribe el número de la opción deseada.');
 
 // Flujos para las otras opciones del menú
 const flowContacto = addKeyword(['3', 'Contacto'])
     .addAnswer('Puedes contactarnos por correo en soporte@ejemplo.com o llamarnos al 123-456-7890.');
 
 // Flujos adicionales
-const flowBienvenida = addKeyword(['Hola', 'hola', 'ola', '.'])
-    .addAnswer('¡Hola! Soy el chat-bot del ITSS🤖 ¿En qué puedo ayudarte hoy?\nSi necesitas ver el menú principal, escribe "Menú".');
+const flowBienvenida = addKeyword('')
+    .addAnswer(`${getSaludo()}, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información\n2. Servicios\n3. Contacto\nEscribe el número de la opción deseada.`);
 
-const flowAyuda = addKeyword('Ayuda')
-    .addAnswer('Claro, estoy aquí para ayudarte. ¿Qué necesitas saber?\nPara ver el menú principal, escribe "Menu".');
+//const flowAyuda = addKeyword('Ayuda')
+  //  .addAnswer('Claro, estoy aquí para ayudarte. ¿Qué necesitas saber?\nPara ver el menú principal, escribe "Menu".');
 
 const flowAdios = addKeyword(['Adios','adios', 'adiós', 'Adiós'])
     .addAnswer('Hasta luego, que tengas un buen día.\nPara ver el menú principal en cualquier momento, escribe "Menu".');
@@ -98,7 +98,7 @@ const mainFlow = createFlow([
     flowMenu,
     flowContacto,
     flowBienvenida,
-    flowAyuda,
+   // flowAyuda,
     flowAdios
 ]);
 
