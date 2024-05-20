@@ -15,19 +15,27 @@ function getSaludo() {
 
 // Flujos para cada carrera
 const respuestasCarreras: { [key: string]: string } = {
+    
+    //Mensaje de informatica
     'informatica': 'La carrera de informática trata de computadoras.',
     'informática': 'La carrera de informática trata de computadoras.',
-    'agronomia': 'Mensaje personalizado para Agronomía.',
-    'agronomía': 'Mensaje personalizado para Agronomía.',
-    'industrial': 'Mensaje personalizado para Industrial.',
-    'energias renovables': 'Mensaje personalizado para Energías Renovables.',
-    'energías renovables': 'Mensaje personalizado para Energías Renovables.',
-    'bioquimica': 'Mensaje personalizado para Bioquímica.',
-    'bioquímica': 'Mensaje personalizado para Bioquímica.',
-    'electromecanica': 'Mensaje personalizado para Electromecánica.',
-    'electromecánica': 'Mensaje personalizado para Electromecánica.',
-    'administracion': 'Mensaje personalizado para Administración.',
-    'administración': 'Mensaje personalizado para Administración.'
+    //Mensaje de agronomia
+    'agronomia': 'Para conocer mas detalles acerca de la carrera de Ing. En Agronomia visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid026PNZ7yZkT1QLxmZAr5JrAhtsDX5YauBWM1XDL55zorPhont8m1wyMF7yM3mxn98hl',
+    'agronomía': 'Para conocer mas detalles acerca de la carrera de Ing. En Agronomia visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid026PNZ7yZkT1QLxmZAr5JrAhtsDX5YauBWM1XDL55zorPhont8m1wyMF7yM3mxn98hl',
+    //Mensaje de industrial
+    'industrial': 'Para conocer mas detalles acerca de la carrera de Ing. Industrial visital el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid0PtGCzbDXDcpNxkKer14zvXk6yixePxLxNKS9E8pRQXcBHQhDKHwvPmHv3zaEQf1Ql',
+    //Mensaje de renovables
+    'energias renovables': 'Para conocer mas detalles acerca de la carrera de Ing. en Energias Renovables visital el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid02zePZUpUkRA3xsmSqfYAJ6dWotyXRnzxrthjKgoHKFraWYbvVDBNtJiDA8ej3D33zl',
+    'energías renovables': 'Para conocer mas detalles acerca de la carrera de Ing. en Energias Renovables visital el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid02zePZUpUkRA3xsmSqfYAJ6dWotyXRnzxrthjKgoHKFraWYbvVDBNtJiDA8ej3D33zl',
+    //Mensaje de bioquimica
+    'bioquimica': 'Para conocer mas detalles acerca de la carrera en Ing. Bioquimica visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid0dFsd7Az2Lf6GmKswqZZoT7qNmoVTzasbLJKEoGyhRJqfPNQS6zywQ2P9jTvTtwifl',
+    'bioquímica': 'Para conocer mas detalles acerca de la carrera en Ing. Bioquimica visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid0dFsd7Az2Lf6GmKswqZZoT7qNmoVTzasbLJKEoGyhRJqfPNQS6zywQ2P9jTvTtwifl',
+    //Mensaje de electro
+    'electromecanica': 'Para conocer mas detalles acerca de la carrera de Ing. Electromecanica visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid035zmLr35LghswfvR19tsWkW6AxpLEXkWVhoQy5Bd3Bf3YMyEudPpkLHdsiEo2hq2Ll',
+    'electromecánica': 'Para conocer mas detalles acerca de la carrera de Ing. Electromecanica visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid035zmLr35LghswfvR19tsWkW6AxpLEXkWVhoQy5Bd3Bf3YMyEudPpkLHdsiEo2hq2Ll',
+    //Mensaje de admi
+    'administracion': 'Para conocer mas detalles acerca de la carrera de Ing. En Administracion de Empresas visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid021VD2VsPGfuENaNUgsR51oxp5oauLATC4TCvoDWbH2QeJxzyLsepQbdq4gmMxxSKul',
+    'administración': 'Para conocer mas detalles acerca de la carrera de Ing. En Administracion de Empresas visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid021VD2VsPGfuENaNUgsR51oxp5oauLATC4TCvoDWbH2QeJxzyLsepQbdq4gmMxxSKul'
 };
 
 // Flujos para talleres
@@ -37,7 +45,6 @@ const respuestasTalleres: { [key: string]: string } = {
     'futbol': 'Mensaje personalizado para el taller de futbol.',
     'fútbol': 'Mensaje personalizado para el taller de futbol.',
     'taekwondo': 'Mensaje personalizado para el taller de taekwondo.'
-
 };
 
 // Flujo para preguntar sobre la carrera deseada
@@ -67,21 +74,29 @@ const flowInformacionTalleres = addKeyword(['2', 'Talleres', 'talleres'])
         }
     });
 
+// Flujo de ubicación
+const flowUbicacion = addKeyword(['4', 'Ubicacion', 'Ubicación'])
+    .addAnswer('Nos encontramos ubicados en📍: \nCarret. Teapa-Tacotalpa Km 4.5 Ej. Fco Javier Mina 86801 Teapa, Tabasco, Mexico');
+
+// Flujo de inscripciones
+const flowInscripciones = addKeyword(['5', 'Inscripciones', 'inscripciones'])
+    .addAnswer('Para conocer mas informacion hacerca del proceso de inscripcion visita el siguiente enlace: \n https://www.facebook.com/TecNMRegionS/posts/pfbid05wGmXzisqevdd3FqvZziuLJQdXp6aL1X7KyowKrd8h3JhY4MaG96HJMYcZbjHfu3l');
+
 // Flujo de saludo inicial
-const flowSaludoInicial = addKeyword('SaludoInicial')
-    .addAnswer(`${getSaludo()}, bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\nEscribe el número de la opción deseada.`);
+//const flowSaludoInicial = addKeyword('SaludoInicial')
+   // .addAnswer(`${getSaludo()}, bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\n4. Ubicación\n5. Inscripciones\nEscribe el número de la opción deseada.`);
 
 // Flujo del menú principal
-const flowMenu = addKeyword(['Menu', 'Menú', 'menú', 'menu'])
-    .addAnswer(' Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\nEscribe el número de la opción deseada.');
+//const flowMenu = addKeyword(['Menu', 'Menú', 'menú', 'menu'])
+   // .addAnswer('Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\n4. Ubicación\n5. Inscripciones\nEscribe el número de la opción deseada.');
 
 // Flujos para las otras opciones del menú
 const flowContacto = addKeyword(['3', 'Contacto', 'Contactanos', 'contactanos'])
-    .addAnswer('Puedes contactarnos por correo en soporte@ejemplo.com o llamarnos al 123-456-7890.');
+    .addAnswer('Para contactarnos puedes visitarnos en nuestras redes sociales📱 \nFacebook: \nInstagram: \nX: \nTECNM- Región Sierra');
 
 // Flujos adicionales
-const flowBienvenida = addKeyword('')
-    .addAnswer(`${getSaludo()}, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\nEscribe el número de la opción deseada.`);
+const flowBienvenida = addKeyword(['Hola', 'hola', '.', 'buenos dias', 'Buenos dias', 'buenas tardes', 'Buenas tardes', 'buenas noches', 'Buenas noches'])
+    .addAnswer(`${getSaludo()}, Hola, soy el chat-bot del ITSS 🤖 Bienvenido al menú principal. Por favor elige una opción:\n1. Información sobre nuestras ingenierias\n2. Talleres\n3. Contáctanos\n4. Ubicación\n5. Proceso de inscripcion\nEscribe el número de la opción deseada.`);
 
 const flowAdios = addKeyword(['Adios', 'adios', 'adiós', 'Adiós'])
     .addAnswer('Hasta luego, que tengas un buen día.\nPara ver el menú principal en cualquier momento, escribe "Menu".');
@@ -90,9 +105,11 @@ const flowAdios = addKeyword(['Adios', 'adios', 'adiós', 'Adiós'])
 const mainFlow = createFlow([
     flowInformacionCarreras,
     flowInformacionTalleres,
-    flowSaludoInicial,
-    flowMenu,
+   // flowSaludoInicial,
+    //flowMenu,
     flowContacto,
+    flowUbicacion,
+    flowInscripciones,
     flowBienvenida,
     flowAdios
 ]);
